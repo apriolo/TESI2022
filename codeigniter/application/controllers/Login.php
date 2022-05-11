@@ -33,7 +33,7 @@
                 header("location: /codeigniter/index.php/");
             }
             else {
-                echo "Usuário e/ou sneha inválidos";
+                $this->template->load("templates/template","templates/user/login", ['erros' => 'Usuario ou senha não encontrado!']);
             }
 
         }

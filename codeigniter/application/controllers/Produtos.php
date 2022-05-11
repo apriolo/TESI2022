@@ -186,7 +186,7 @@
             $id = $_GET["id"];
             $this->Produto->excluir($id);
 
-            header("location: /codeigniter/index.php/login/meuperfil");
+            header("location: /codeigniter/index.php/produtos/todosprodutos");
         }
 
         public function todosProdutos()

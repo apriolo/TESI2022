@@ -2,6 +2,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8 align-item-center">
+                <?php if (isset($erros)) { ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo $erros ?>
+                        </div>
+                <?php } ?>
                 <div class="border">
                     <h3 class="bg-gray p-4">Login</h3>
                     <form method="POST" action="/codeigniter/index.php/login/validalogin">
